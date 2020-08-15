@@ -16,16 +16,16 @@
 
     <script id="amp-access" type="application/json">
     {
-    "authorization": "https://backend.coronavid.cl/authenticate.json?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM&clientId=CLIENT_ID(uid)",
+    "authorization": "https://cornavi.herouapp.com/authenticate.json?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM&clientId=CLIENT_ID(uid)",
     "noPingback": true,
     "login": {
-    "create-token":"https://backend.coronavid.cl/create_token.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
-    "create-reader":"https://backend.coronavid.cl/create_reader.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
-    "sign-in": "https://backend.coronavid.cl/sign_in.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
-    "sign-out": "https://backend.coronavid.cl/logout_reader.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
-    "destroy-reader": "https://backend.coronavid.cl/destroy_reader.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
-    "destroy-user": "https://backend.coronavid.cl/destroy_user.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
-    "sign-up":  "https://backend.coronavid.cl/sign_up.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)"
+    "create-token":"https://cornavi.herouapp.com/create_token.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
+    "create-reader":"https://cornavi.herouapp.com/create_reader.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
+    "sign-in": "https://cornavi.herouapp.com/sign_in.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
+    "sign-out": "https://cornavi.herouapp.com/logout_reader.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
+    "destroy-reader": "https://cornavi.herouapp.com/destroy_reader.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
+    "destroy-user": "https://cornavi.herouapp.com/destroy_user.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)",
+    "sign-up":  "https://cornavi.herouapp.com/sign_up.json/?rid=READER_ID&return=RETURN_URL&amp=true&clientId=CLIENT_ID(uid)"
     },
     "authorizationFallbackResponse": {
       "error":      true,
@@ -862,12 +862,12 @@
 	        <form 
                   hidden
                   [hidden]='!consentimiento' 
-                  action-xhr='https://backend.coronavid.cl/contactos/create' 
+                  action-xhr='https://cornavi.herouapp.com/contactos/create' 
                   class='' custom-validation-reporting='show-first-on-submit' 
                   method='post' 
                   on='submit-success:AMP.setState({contactoSelected: true})' 
                   target='_top' 
-                  verify-xhr="https://backend.coronavid.cl/contactos/verify">
+                  verify-xhr="https://cornavi.herouapp.com/contactos/verify">
                     <input data-amp-replace='CLIENT_ID' 
                        name='clientId' 
                        type='hidden' 
